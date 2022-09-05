@@ -16,5 +16,10 @@
 
 要解决的问题是：已知$$G$$​和$$3G$$​，算出椭圆曲线$$y^2 \equiv x^3 + ax + b \pmod{p}$$​上的$$a$$​和$$b$$​
 
-对椭圆曲线变换得到$$y^2 - x^3 - ax \equiv b \pmod{p}$$，将两个点代入得到$$b_1=b+k_1p$$，$$b_2 = b + k_2p$$，相减和$$n$$​取GCD得到$$p$$​，根据RSA定义得到$$q=\frac{n}{p}$$​
+对椭圆曲线变换得到$$y^2 - x^3 - ax \equiv b \pmod{p}$$，将两个点代入得到$$b_1=b+k_1p$$，$$b_2 = b + k_2p$$，相减和$$n$$​取GCD得到$$p$$​，根据RSA定义得到$$q=\frac{n}{p}$$，$$a$$的值同理
 
+因为$$G+2G=3G$$​，根据椭圆曲线上的加法规则，先计算出$$2G$$​，再算出$$a$$​
+
+### homo
+
+{% embed url="https://martinralbrecht.wordpress.com/2020/03/21/the-approximate-gcd-problem/" %}
